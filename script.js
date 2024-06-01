@@ -40,6 +40,7 @@ function renderTasks() {
     }
 
     const button = document.createElement("button");
+    button.style.marginRight = "1rem";
     button.textContent = "✓";
     button.onclick = function () {
       if (tasks[index].done == true) {
@@ -54,7 +55,20 @@ function renderTasks() {
       console.log(tasks);
     };
 
-    li.append(button);
+    const delete_btn = document.createElement("button");
+    delete_btn.textContent = "🗑️"
+    delete_btn.onclick = function() {
+      tasks.splice(index, 1);
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+      console.log(tasks);
+      renderTasks();
+    }
+
+    const buttons_container = document.createElement("div");
+    buttons_container.append(button);
+    buttons_container.append(delete_btn);
+    
+    li.append(buttons_container);
 
     container.append(li);
   });
