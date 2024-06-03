@@ -1,11 +1,12 @@
 const form = document.forms[0];
 const taskInput = document.getElementById("task-input");
-
+const task_title =document.getElementById("taskTitle")
 const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 console.log(tasks);
-
+const len =tasks.length
+console.log(len)
 renderTasks();
-
+task_title.innerHTML=`Tasks to do -${len}`
 form.onsubmit = function (event) {
   event.preventDefault();
 
@@ -29,6 +30,7 @@ function renderTasks() {
 
   tasks.forEach((task, index) => {
     // {}
+   
     const li = document.createElement("li");
     const span = document.createElement("span");
 
@@ -41,7 +43,7 @@ function renderTasks() {
 
     const button = document.createElement("button");
     button.style.marginRight = "1rem";
-    button.textContent = "✓";
+    button.innerHTML = `<img src="./assets/Check.svg" alt="">`;
     button.onclick = function () {
       if (tasks[index].done == true) {
         tasks[index].done = false;
@@ -56,7 +58,7 @@ function renderTasks() {
     };
 
     const delete_btn = document.createElement("button");
-    delete_btn.textContent = "🗑️"
+    delete_btn.innerHTML = `<img src="./assets/TrashSimple.svg" alt="">`
     delete_btn.onclick = function() {
       tasks.splice(index, 1);
       localStorage.setItem("tasks", JSON.stringify(tasks));
