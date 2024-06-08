@@ -1,0 +1,12 @@
+#hero {
+    margin-top: 58px;
+    .container {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 1294px;
+        height: 344px;
+        border-radius: 10px;
+      }
+    }
+  }

@@ -1,0 +1,45 @@
+#filter {
+    margin-top: 40px;
+    .container {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        .first_list {
+          display: flex;
+          gap: 20px;
+          button {
+            border-radius: 30px;
+            padding: 16px 30px;
+            border: none;
+            background-color: rgba(239, 239, 239, 1);
+
+            p {
+              font-family: Inter;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 24.2px;
+              text-align: center;
+              color: rgba(69, 68, 68, 1);
+            }
+          }
+        }
+        .second_list {
+          button {
+            border-radius: 30px;
+            padding: 16px 30px;
+            border: none;
+            background-color: white;
+            border: 1px solid rgba(217, 217, 217, 1);
+            p {
+              font-family: Inter;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 24.2px;
+              text-align: center;
+              color: rgba(69, 68, 68, 1);
+            }
+          }
+        }
+      }
+    }
+  }

@@ -4,20 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tasks</title>
-  <link rel="stylesheet" href="/main.css">
-  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <script defer src="./js/script.js"></script>
 </head>
 <body>
-  <div class="main-container">
-    <div class="wrapper">
-    <form>
-      <input required type="text" name="todo" placeholder="Add a new task" id="task-input">
-      <button type="submit">&plus;</button>
-    </form>
-    <p id="taskTitle">Task to do -</p>
-    <ul class="tasks-container"></ul>
-    
-  </div>
-  </div>
+  <header>
+    <nav class="top_nav">
+      <ul>
+        <li>
+          <img src="./assets/icons/fi-rr-call-incoming.svg" alt="">
+          <p>+4904-049-950</p>
+        </li>
+        <li>
+          <p>Get 50% Off on the Selected items</p>
+          <img src="./assets/icons/Rectangle 31.svg" alt="">
+          <a href=""><span>Shop now</span></a>
+        </li>
+        <li>
+          <a href=""><p>English</p></a>
+          <a href=""><p>Location</p></a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="bottom_nav">
+      <ul>
+        <li>
+          <h1>LOGO</h1>
+        </li>
+        <li class="parts">
+          <p>Categories</p>
+          <p>What's new</p>
+          <p>Sales</p>
+          <p>Help</p>
+        </li>
+        <li class="actions">
+          <input type="text" placeholder="Search products">
+          <div class="btn1">
+            <img src="./assets/icons/fi-rs-user.svg" alt="">
+            <a href=""><p>Account</p></a>
+          </div>
+          <div class="btn1">
+            <img src="./assets/icons/fi-rs-shopping-cart.svg" alt="">
+            <a href=""><p>Cart</p></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="container">
+        <img src="./assets/images/photo_2024-06-08_12-15-40.jpg" alt="">
+      </div>
+    </section>
+    <section id="filter">
+      <div class="container">
+      <ul>
+        <li class="first_list">
+          <button><p>Headphone Type</p></button>
+          <button><p>Price</p></button>
+          <button><p>Material</p></button>
+          <button><p>Color</p></button>
+          <button><p>All Filters</p></button>
+        </li>
+        <li class="second_list">
+          <button><p>Sort by</p></button>
+        </li>
+      </ul>
+    </div>
+    </section>
+    <section id="cards">
+      <div class="container">
+        <h1>Headphones For You!</h1>
+        <ul class="card_list">
+          
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
