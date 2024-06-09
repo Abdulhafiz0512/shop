@@ -16,10 +16,12 @@ function renderProducts(products) {
   products.forEach((product) => {
     const li = document.createElement("li");
     
-
+    const imgLink=document.createElement("a");
+    imgLink.href = `product.html?id=${product.id}&title=${product.title}`;
     const img = document.createElement("img");
-    img.src = product.image;
-    li.append(img);
+    img.src = product.image; 
+    imgLink.append(img);
+    li.append(imgLink);
 
     const cost_info = document.createElement("div");
 
