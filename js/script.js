@@ -1,3 +1,5 @@
+import { checkToken,redirect } from "./utils.js";
+
 const container = document.querySelector(".card_list");
 
 async function fetchProducts() {
@@ -70,6 +72,10 @@ function renderProducts(products) {
 
 // IIFE
 (async function () {
+  const hasToken = checkToken()
+  if (hasToken==false){
+    redirect("/login.html")
+  }
   const products = await fetchProducts();
   renderProducts(products);
 })();

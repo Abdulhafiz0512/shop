@@ -18,7 +18,7 @@ a {
 }
 
 button:hover {
-  scale: 1.15;
+  scale: 1.05;
 }
 
 header .top_nav {
@@ -115,6 +115,71 @@ header .bottom_nav ul .actions .btn1 p {
 header .bottom_nav ul .actions .btn1 img {
   width: 25px;
   height: 25px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-control h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 77.45px;
+  text-align: left;
+  color: rgb(69, 68, 68);
+  margin-top: 61px;
+}
+.form-control h2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 16px;
+}
+.form-control form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.form-control form input {
+  width: 600px;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+}
+.form-control form a {
+  text-decoration: underline;
+  margin-left: 500px;
+  margin-top: -32px;
+}
+.form-control form button {
+  width: 599px;
+  margin-top: 75px;
+  width: Hug 599px px;
+  border: none;
+  padding: 17px 262px 17px 262px;
+  gap: 10px;
+  border-radius: 30px;
+  opacity: 0px;
+  background-color: rgb(69, 68, 68);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  color: white;
 }
 
 #cards {
